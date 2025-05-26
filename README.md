@@ -19,6 +19,6 @@ My taste in video games reflects my love for storytelling, as I primarily immers
 
 ## Helpful Discoveries
 
-[How to Create Mermaid Diagrams in GitLab]( https://www.youtube.com/watch?v=SQ9QmuTHuSI&t=438s) In this case, I found the blind leading the blind to be extremely helpful. She’s also a beginner and so often uses more familiar terms when explaining her process to create her Mermaid Diagram <br>
+[Color Code Chart]( https://htmlcolorcodes.com/) This is a link to a color code chart that I found while working on the Mermaid Diagram assignment. I found it to be extremely helpful, with a little more flexibility than other charts I looked at. <br>
 [Novel Updates](https://www.novelupdates.com/) This is the source for Asian novels that I mentioned earlier. You won’t be able to see links for reading anything until after you create an account and sign in. If anyone else finds something similar, I’m always open to suggestions
 
