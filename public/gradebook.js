@@ -14,25 +14,25 @@ xhr.onreadystatechange = function(){
 }.bind(this);
 xhr.open("get", apiRoute, true);
 xhr.send();
+}
 
-
-function populateGradebook (data){
+function populateGradebook(data) {
     console.log("Populating gradebook with data:", data);
-    let tableE1M = document.getElementById("gradebook");
-        data.forEach(function(assignment){
+    let tableElm = document.getElementById("gradebook");
+        data.forEach(function(assignments){
             let row = document.createElement('tr');
             let columns = [];
             columns.name = document.createElement('td');
             columns.name.appendChild(
-                document.createTextNode(assignment.last_name + "," + assignment.first_name)
+                document.createTextNode(assignments.last_name + ", " + assignments.first_name)
             );
             columns.grade = document.createElement('td');
             columns.grade.appendChild(
-                document.createTextNode(assignment.total_grade)
+                document.createTextNode(assignments.total_grade)
             );
             row.appendChild(columns.name);
             row.appendChild(columns.grade);
-            tableEm.appendChild(row);
+            tableElm.appendChild(row);
         });
-}}
+}
 fetchGradeData();
