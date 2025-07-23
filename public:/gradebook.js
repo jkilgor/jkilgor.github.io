@@ -1,4 +1,4 @@
-function fectchGradeData() {
+function fetchGradeData() {
 console.log("Fetching grade data...");
 let xhr = new XMLHttpRequest();
 let apiRoute = "/api/grades"
@@ -16,7 +16,7 @@ xhr.open("get", apiRoute, true);
 xhr.send();
 }
 
-function populateGradebook (data){
+function populateGradebook(data){
     console.log("Populating gradebook with data:", data);
     let tableE1M = document.getElementById("gradebook");
         data.forEach(function(assignment){
@@ -35,4 +35,4 @@ function populateGradebook (data){
             tableEm.appendChild(row);
         });
 }
-fectchGradeData();
+fetchGradeData();
