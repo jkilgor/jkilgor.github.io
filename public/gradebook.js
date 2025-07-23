@@ -1,4 +1,4 @@
-function fectchGradeData(){
+function fetchGradeData(){
 console.log("Fetching grade data...");
 let xhr = new XMLHttpRequest();
 let apiRoute = "/api/grades"
