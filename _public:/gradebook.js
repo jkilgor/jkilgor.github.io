@@ -1,26 +1,21 @@
 function fectchGradeData(){
 console.log("Fetching grade data...");
-// Create a new request for HTTP data
 let xhr = new XMLHttpRequest();
-//• This is the address on the machine we're asking for data
-let apiRoute = "/api/grades";
-// When the request changes status, we run this anonymous function
-xhr. onreadystatechange = function(){
+let apiRoute = "/api/grades"
+xhr.onreadystatechange = function(){
     let results;
-// Check if we're done
-    if(xhr.readystate === xhr.DONE){
-    // Check if we're successful 
-       if (xhr.status !== 200){
-            console. error ('Could not get grades.
-             Status: ${xhr.status}');
-}
-// And then call the function to update the HTML with our data
-populateGradebook(JSON. parse(xhr.responseText));
+    if(xhr.readyState === xhr.DONE){
+        if(xhr.status !== 200){
+            console.error(`Could not get grades.
+                Status: ${xhr.status}`);
+        }
+        populateGradebook(JSON.parse(xhr.responseText));
+    }
+}.bind(this);
+xhr.open("get", apiRoute, true);
+xhr.send();
 
-}.bind (this);
-xhr. open ("get", apiRoute, true);
-xhr.send ();
-｝
+
 function populateGradebook (data){
     console.log("Populating gradebook with data:", data);
     let tableE1M = document.getElementById("gradebook");
@@ -37,8 +32,7 @@ function populateGradebook (data){
             );
             row.appendChild(columns.name);
             row.appendChild(columns.grade);
-            tableE1M.appendChild(row);
+            tableEm.appendChild(row);
         });
-}
-const gradeData = fectchGradeData();
-populateGradebook(gradeData);
+}}
+fectchGradeData();
