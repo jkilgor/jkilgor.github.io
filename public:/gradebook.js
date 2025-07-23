@@ -35,4 +35,4 @@ function populateGradebook (data){
             tableEm.appendChild(row);
         });
 }}
-fectchGradeData();
+fetchGradeData();
